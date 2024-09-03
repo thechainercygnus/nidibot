@@ -96,7 +96,7 @@ jobs:
     - name: Create release entry
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "dist/nidibot-*.tar.gz, dist/nidibot-*.whl"
+        artifacts: "dist/nidibot_docker-*.tar.gz, dist/nidibot_docker-*.whl"
         body: "${{ steps.git-cliff-release-entry.outputs.content }}"
         tag: "v${{ steps.version.outputs.NEW_TAG_NAME }}"
 
