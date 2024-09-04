@@ -7,6 +7,9 @@ services:
       - ./backups:/app/backups
       - ./logs:/app/logs
     restart: unless-stopped
+    # env_file:
+    #  - .env
+    # Uncomment to set Environment Variables
     # environment:
     #  - NITRADO_TOKEN=nitrado_api_token
     #   Uncomment the following to use Discord
@@ -14,6 +17,6 @@ services:
     #   - DISCORD_PRIVILEGED_USERS=user1,user2                    # Can be single or comma separated list
     #   - DISCORD_ALLOWED_CHANNELS=channel_id_1,channel_id_2      # Can be single or comma separated list
     #   Uncomment the following to use Telegram
-    #   - TELEGRAM_TOKEN=telegram_token
+    #   - TELEGRAM_TOKEN=telegram_atoken
     #   - TELEGRAM_PRIVILEGED_USERS=user1,user2                   # Can be single or comma separated list
     #   - TELEGRAM_ALLOWED_CHANNELS=channel_id_1,channel_id_2     # Can be single or comma separated list
